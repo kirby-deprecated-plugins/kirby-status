@@ -1,6 +1,6 @@
 # Field
 
-No installation of the field is required, only setup in the blueprint.
+No installation of the field is required, only the blueprint setup.
 
 ![](https://github.com/jenstornell/kirby-status/blob/master/docs/status.gif)
 
@@ -17,6 +17,13 @@ fields:
 ## Label
 
 Like any other field you can add a label as well.
+
+```md
+fields:
+  status:
+    label: Status
+    type: status
+```
 
 ## Default
 
