@@ -11,7 +11,18 @@ class StatusField extends BaseField {
 			'private' => 'Private',
 		);
 
-		$value = ( ! empty( $this->value() ) ) ? $this->value() : 'unpublished';
+		// If not exist - Published
+		if( ! $this->page()->{$this->name()}()->exists() ) {
+			$value = 'published';
+		// If empty - Unpublished
+		} elseif( empty( $this->value() ) ) {
+			$value = 'unpublished';
+		// Else - Value
+		} else {
+			$value = $this->value();
+		}
+
+		#$value = ( ! empty( $this->value() ) ) ? $this->value() : 'published';
 		$html .= tpl::load( __DIR__ . DS . 'template.php', $data = array(
 			'options' => $options,
 			'field' => $this,
