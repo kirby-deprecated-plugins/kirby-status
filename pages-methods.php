@@ -1,24 +1,23 @@
 <?php
 // $pages->published()
 pages::$methods['published'] = function($pages) {
-	foreach( $pages->data as $key => $item ) {
-		if( $item->getStatus() != 'published' ) unset( $pages->$key );
-	}
-	return $pages;
+	return $pages->filterBy('isPublished', true);
 };
 
 // $pages->unpublished()
 pages::$methods['unpublished'] = function($pages) {
-	foreach( $pages->data as $key => $item ) {
-		if( $item->getStatus() != 'unpublished' ) unset( $pages->$key );
-	}
-	return $pages;
+	return $pages->filterBy('isUnpublished', true);
 };
 
 // $pages->private()
 pages::$methods['private'] = function($pages) {
-	foreach( $pages->data as $key => $item ) {
-		if( $item->getStatus() != 'private' ) unset( $pages->$key );
-	}
-	return $pages;
+	return $pages->filterBy('isPrivate', true);
+};
+
+// $pages->privatePublished()
+pages::$methods['privatePublished'] = function($pages) {
+	$collection = new Pages();
+	$collection->add( $pages->private() );
+	$collection->add( $pages->published() );
+	return $collection;
 };

@@ -1,7 +1,7 @@
 <?php
 // $page->isPublished()
 page::$methods['isPublished'] = function($page) {
-	$field_key = c::get('status.field.key', 'status');
+	$field_key = c::get('plugin.status.field.key', 'status');
 
 	if( ! $page->{$field_key}()->exists() ) return true;
 	if( $page->status()->value() === 'published' ) return true;
@@ -10,7 +10,7 @@ page::$methods['isPublished'] = function($page) {
 
 // $page->isUnpublished()
 page::$methods['isUnpublished'] = function( $page ) {
-	$field_key = c::get('status.field.key', 'status');
+	$field_key = c::get('plugin.status.field.key', 'status');
 
 	if( ! $page->{$field_key}()->exists() ) return false;
 	if( $page->{$field_key}()->empty() ) return true;
@@ -20,21 +20,14 @@ page::$methods['isUnpublished'] = function( $page ) {
 
 // $page->isPrivate()
 page::$methods['isPrivate'] = function($page) {
-	$field_key = c::get('status.field.key', 'status');
+	$field_key = c::get('plugin.status.field.key', 'status');
 
 	if( $page->{$field_key}() == 'private' ) return true;
 	return false;
 };
 
 // $page->getStatus()
-page::$methods['getStatus'] = function( $page, $array = array() ) {
-	$private = false;
-
-	if( isset( $array['private'] ) ) {
-		$private = $array['private'];
-	}
-
-	if( $private && ! site()->user() ) return '';
+page::$methods['getStatus'] = function( $page ) {
 	if( $page->isPublished() ) {
 		return 'published';
 	} elseif( $page->isUnpublished() ) {

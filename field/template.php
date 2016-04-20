@@ -1,4 +1,4 @@
-<?php if( c::get('status.panel.indicator', true) ) : ?>
+<?php if( c::get('plugin.status.panel.indicator', true) ) : ?>
 <style>
 	.app {
 		padding-top: calc( 3em + 5px );

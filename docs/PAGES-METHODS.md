@@ -31,3 +31,23 @@ foreach( $pages->private() as $item ) {
   echo $item->title() . ' ' . $item->getStatus() . '<br>';
 }
 ```
+
+## $pages->privatePublished()
+
+Filter the result to contain `private` and `published` pages.
+
+```php
+foreach( $pages->privatePublished() as $item ) {
+  echo $item->title() . ' ' . $item->getStatus() . '<br>';
+}
+```
+
+## Loop only if logged in
+
+```php
+$collection = ( ! site()->user() ) ? $pages->published() : $pages->privatePublished();
+
+foreach( $collection as $item ) {
+  echo $item->title() . ' ' . $item->getStatus() . '<br>';
+}
+```

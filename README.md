@@ -1,5 +1,7 @@
 # Kirby Status
 
+**Version 0.2**
+
 *Require Kirby 2.3*
 
 With this plugin a page can have 3 different statuses:
@@ -21,3 +23,7 @@ With this plugin a page can have 3 different statuses:
 - [Pages methods](https://github.com/jenstornell/kirby-status/blob/master/docs/PAGES-METHODS.md)
 - [Controller](https://github.com/jenstornell/kirby-status/blob/master/docs/CONTROLLER.md)
 - [Config](https://github.com/jenstornell/kirby-status/blob/master/docs/CONFIG.md)
+
+## Changelog
+
+Go to [changelog](https://github.com/jenstornell/kirby-status/blob/master/docs/CHANGELOG.md).

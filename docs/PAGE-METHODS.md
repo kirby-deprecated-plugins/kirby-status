@@ -39,15 +39,3 @@ Return the status as string.
 ```php
 echo 'Status: ' . $page->getStatus();
 ```
-
-### Private argument
-
-You can also use an array with `private` set to true or false (default is `false`).
-
-If `private` is true, it will only return the status value if the user is logged in.
-
-```php
-echo $page->getStatus( array( 'private' => true) );
-```
-
-*Don't confuse it with the status value `private`.*
