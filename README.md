@@ -10,7 +10,7 @@ With this plugin a page can have 3 different statuses:
 - **Unpublished** - Not public to anyone, like if the page was deleted.
 - **Private** - Public to logged in users.
 
-![](https://github.com/jenstornell/kirby-status/blob/master/docs/status.gif)
+![](https://github.com/jenstornell/kirby-status/blob/master/docs/status0.2.gif)
 
 ## Installation
 

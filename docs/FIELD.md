@@ -2,7 +2,7 @@
 
 No installation of the field is required, only the blueprint setup.
 
-![](https://github.com/jenstornell/kirby-status/blob/master/docs/status.gif)
+![](https://github.com/jenstornell/kirby-status/blob/master/docs/status0.2.gif)
 
 ## Blueprint
 
