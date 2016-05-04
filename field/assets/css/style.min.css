@@ -1,0 +1,1 @@
+.status-private,.status-published,.status-unpublished{top:3em;left:0;position:fixed;z-index:1000;width:100%}.app{padding-top:calc(3em + 5px)}.status-published{border-top:5px solid #8dae28}.status-unpublished{border-top:5px solid #b3000a}.status-private{border-top:5px solid #f89406}

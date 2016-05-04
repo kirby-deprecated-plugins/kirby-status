@@ -11,21 +11,11 @@ Below is the most basic example.
 ```md
 fields:
   status:
-    type: status
-```
-
-## Label
-
-Like any other field you can add a label as well.
-
-```md
-fields:
-  status:
     label: Status
     type: status
 ```
 
-## Default
+## Default value
 
 If you don't want your page to be `unpublished` when it's created you can set a default value.
 

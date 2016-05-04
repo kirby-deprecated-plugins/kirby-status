@@ -1,5 +1,7 @@
 <?php
 class StatusField extends BaseField {
+	static public $assets = array( 'css' => array( 'style.min.css' ) );
+
 	public function __construct() {
 		$this->icon = 'chevron-down';
 	}

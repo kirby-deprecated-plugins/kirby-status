@@ -1,8 +1,8 @@
 # Kirby Status
 
-**Version 0.2**
+**Version 0.3**
 
-*Require Kirby 2.3*
+*Require Kirby 2.3 beta 2*
 
 With this plugin a page can have 3 different statuses:
 
@@ -14,14 +14,14 @@ With this plugin a page can have 3 different statuses:
 
 ## Installation
 
-1. Add `status` plugin folder into `/site/plugins/`
+1. Add `status` plugin folder into `/site/plugins/`.
 
 ## Setup
 
 - [Field](https://github.com/jenstornell/kirby-status/blob/master/docs/FIELD.md)
 - [Page methods](https://github.com/jenstornell/kirby-status/blob/master/docs/PAGE-METHODS.md)
 - [Pages methods](https://github.com/jenstornell/kirby-status/blob/master/docs/PAGES-METHODS.md)
-- [Controller](https://github.com/jenstornell/kirby-status/blob/master/docs/CONTROLLER.md)
+- [Redirect](https://github.com/jenstornell/kirby-status/blob/master/docs/REDIRECT.md)
 - [Config](https://github.com/jenstornell/kirby-status/blob/master/docs/CONFIG.md)
 
 ## Changelog
