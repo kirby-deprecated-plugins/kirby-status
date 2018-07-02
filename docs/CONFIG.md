@@ -20,7 +20,7 @@ c::set( 'plugin.status.field.key', 'status' ); // `status` is default
 
 ## Custom translations
 
-If your language is mmissing, you can define your own set of translations in the `config.php` file:
+If your language is missing, you can define your own set of translations in the `config.php` file:
 
 ```php
 c::set( 'plugin.status.custom.translation', [
