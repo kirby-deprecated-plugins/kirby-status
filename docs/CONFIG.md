@@ -17,3 +17,17 @@ If you want to use another field name than `status`, you need to add an option f
 ```php
 c::set( 'plugin.status.field.key', 'status' ); // `status` is default
 ```
+
+## Custom translations
+
+If your language is mmissing, you can define your own set of translations in the `config.php` file:
+
+```php
+c::set( 'plugin.status.custom.translation', [
+  'it' => [
+      'published'   => 'Publié',
+      'private'     => 'Privé',
+      'unpublished' => 'Non publié',
+  ]
+]);
+```

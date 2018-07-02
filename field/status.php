@@ -20,4 +20,20 @@ class StatusField extends BaseField {
 		));
 		return $html;
 	}
+
+	public function translate($string) {
+		$translation = c::get('plugin.status.custom.translation', false);
+		$language = site()->user()->data()['language'];
+		if(!$translation) {
+			$translations = require __DIR__ . DS . 'translations.php';
+		 	if (! array_key_exists($language, $translations)) {
+				$language = 'en';
+		 	}
+			$translation = $translations[$language];
+		}
+		if(array_key_exists($string, $translation)) {
+			$string = $translation[$string];
+		}
+	 	return $string;
+ }
 }
