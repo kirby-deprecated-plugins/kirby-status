@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4
+
+- Add translations for select options (en, de, it) and option to add own set via config.
+
 ## 0.3
 
 - Moved field css from inline to a css file.
